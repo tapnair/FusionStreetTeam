@@ -1,0 +1,13 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"addin",
+	"id":	"f3de9e0c-750f-4f13-b217-5874742a7dcb",
+	"author":	"Patrick Rainsberry",
+	"description":	{
+		"":	"Application to help customers access Fusion Street Team Information"
+	},
+	"version":	"1.0",
+	"runOnStartup":	false,
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}
