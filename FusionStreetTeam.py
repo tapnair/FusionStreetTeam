@@ -22,7 +22,6 @@ cmd = {
     'drop_down_cmd_id': 'cmdID_FT_Drop',
     'drop_down_resources': './resources',
     'drop_down_name': 'Fusion Street Team',
-    'is_promoted': True,
     'class': FusionStreetTeamCommand
 }
 
@@ -41,8 +40,6 @@ cmd = {
     'drop_down_cmd_id': 'cmdID_FT_Drop',
     'drop_down_resources': './resources',
     'drop_down_name': 'Fusion Street Team',
-    'is_promoted': True,
-
     'class': FusionStreetTeamCommand
 }
 
