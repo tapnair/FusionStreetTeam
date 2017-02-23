@@ -13,15 +13,16 @@ cmd_definitions = []
 cmd = {
     'cmd_name': 'Fusion Success Team Progression',
     'cmd_description': 'Fusion Success Team Progression',
-    'cmd_resources': './resources',
     'cmd_id': 'cmdID_FT_Progression',
+    'url': 'https://slack-files.com/T02NW42JD-F3ZRZB83Z-3cf6371435',
+    'cmd_resources': './resources',
     'workspace': 'FusionSolidEnvironment',
     'toolbar_panel_id': 'SolidScriptsAddinsPanel',
     'add_to_drop_down': True,
     'drop_down_cmd_id': 'cmdID_FT_Drop',
     'drop_down_resources': './resources',
     'drop_down_name': 'Fusion Street Team',
-    'url': 'https://slack-files.com/T02NW42JD-F3ZRZB83Z-3cf6371435',
+    'is_promoted': True,
     'class': FusionStreetTeamCommand
 }
 
@@ -31,15 +32,17 @@ cmd_definitions.append(cmd)
 cmd = {
     'cmd_name': 'Fusion Success Team Calendar',
     'cmd_description': 'Fusion Success Team Calendar',
+    'url': 'https://calendly.com/street-team-members',
+    'cmd_id': 'cmdID_FT_Calendar',
     'cmd_resources': './resources',
-    'cmd_id': 'cmdID_FT_Progression',
     'workspace': 'FusionSolidEnvironment',
     'toolbar_panel_id': 'SolidScriptsAddinsPanel',
     'add_to_drop_down': True,
     'drop_down_cmd_id': 'cmdID_FT_Drop',
     'drop_down_resources': './resources',
     'drop_down_name': 'Fusion Street Team',
-    'url': 'https://calendly.com/street-team-members',
+    'is_promoted': True,
+
     'class': FusionStreetTeamCommand
 }
 
