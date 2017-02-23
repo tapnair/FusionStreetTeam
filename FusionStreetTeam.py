@@ -1,31 +1,49 @@
-#Author-Patrick Rainsberry
-#Description-Application to help customers access Fusion Street Team Information
-
 # Author-Patrick Rainsberry
-# Description-testing top down workflow
+# Description-Application to help customers access Fusion Street Team Information
 
 
-from .TopDownProtoCommand import TopDownProtoCommand, TopDownProtoCommand2, TopDownProtoCommand3
+from .FusionStreetTeamCommand import FusionStreetTeamCommand
 
 
 commands = []
 cmd_definitions = []
 
 
-# Define parameters for 1st command #####
+# Define parameters for 1st command
 cmd = {
-    'cmd_name': 'Create Component',
-    'cmd_description': 'Testing Top Down Workflow',
+    'cmd_name': 'Fusion Success Team Progression',
+    'cmd_description': 'Fusion Success Team Progression',
     'cmd_resources': './resources',
-    'cmd_id': 'cmdID_Demo_1',
+    'cmd_id': 'cmdID_FT_Progression',
     'workspace': 'FusionSolidEnvironment',
     'toolbar_panel_id': 'SolidScriptsAddinsPanel',
-    'class': TopDownProtoCommand
+    'add_to_drop_down': True,
+    'drop_down_cmd_id': 'cmdID_FT_Drop',
+    'drop_down_resources': './resources',
+    'drop_down_name': 'Fusion Street Team',
+    'url': 'https://slack-files.com/T02NW42JD-F3ZRZB83Z-3cf6371435',
+    'class': FusionStreetTeamCommand
 }
 
 cmd_definitions.append(cmd)
 
+# Define parameters for 2nd command
+cmd = {
+    'cmd_name': 'Fusion Success Team Calendar',
+    'cmd_description': 'Fusion Success Team Calendar',
+    'cmd_resources': './resources',
+    'cmd_id': 'cmdID_FT_Progression',
+    'workspace': 'FusionSolidEnvironment',
+    'toolbar_panel_id': 'SolidScriptsAddinsPanel',
+    'add_to_drop_down': True,
+    'drop_down_cmd_id': 'cmdID_FT_Drop',
+    'drop_down_resources': './resources',
+    'drop_down_name': 'Fusion Street Team',
+    'url': 'https://calendly.com/street-team-members',
+    'class': FusionStreetTeamCommand
+}
 
+cmd_definitions.append(cmd)
 
 # Set to True to display various useful messages when debugging your app
 debug = False

@@ -1,21 +1,21 @@
 __author__ = 'rainsbp'
 
-import adsk.core
-import adsk.fusion
-import traceback
+import webbrowser
 
-from .Fusion360Utilities import Fusion360Utilities as futil
-from .Fusion360Utilities.Fusion360Utilities import get_app_objects
 from .Fusion360Utilities.Fusion360CommandBase import Fusion360CommandBase
 
 
 # Main class for import command
-class SlicerImportCommand(Fusion360CommandBase):
+class FusionStreetTeamCommand(Fusion360CommandBase):
+
+    def __init__(self, cmd_def, debug):
+
+        super().__init__(cmd_def, debug)
+
+        self.url = cmd_def.get('url', 'http://www.autodesk.com/products/fusion-360/overview')
 
     # Executed on user pressing OK button
     def on_execute(self, command, command_inputs, args, input_values):
-        pass
 
-# Define the user interface for the command
-    def on_create(self, command, command_inputs):
-        pass
+        # Launch web browser using user's default browser
+        webbrowser.open(self.url)
