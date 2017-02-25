@@ -1,7 +1,7 @@
 # Fusion Street Team Resources
 Fusion 360 add-in to quickly access Street team resources
 
-[Fusion Street Team](./resources/cover_image.png)
+![Fusion Street Team](./resources/cover_image.png)
 
 ## Installation
 [Click here to download the Add-in](https://github.com/tapnair/FusionStreetTeam/releases/download/V1.0/FusionStreetTeam.zip)
