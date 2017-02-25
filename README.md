@@ -1,10 +1,16 @@
 # Fusion Street Team Resources
 Fusion 360 add-in to quickly access Street team resources
 
+[Fusion Street Team](./resources/cover_image.png)
+
+## Installation
+[Click here to download the Add-in](https://github.com/tapnair/FusionStreetTeam/releases/download/V1.0/FusionStreetTeam.zip)
+
+After downloading the zip file follow the [installation instructions here](https://tapnair.github.io/installation.html) for your particular OS version of Fusion 360 
 
 
 ## Usage:
-First see [How to install sample Add-Ins and Scripts](https://rawgit.com/AutodeskFusion360/AutodeskFusion360.github.io/master/Installation.html)
+After Installation you should see relevant links from the Fusion Street team in your Addins Menu
 
 ## License
 Licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). Please see the [LICENSE](LICENSE) file for full details.
