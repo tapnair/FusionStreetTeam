@@ -13,8 +13,10 @@ After downloading the zip file follow the [installation instructions here](https
 After Installation you should see relevant links from the Fusion Street team in your Addins Menu
 
 ## License
-Licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). Please see the [LICENSE](LICENSE) file for full details.
+Samples are licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). Please see the [LICENSE](LICENSE) file for full details.
 
 ## Written by
 
-Written by Patrick Rainsberry <br /> (Autodesk Fusion 360 Business Development)
+Written by [Patrick Rainsberry](https://twitter.com/prrainsberry) <br /> (Autodesk Fusion 360 Business Development)
+
+See more useful [Fusion 360 Utilities](https://tapnair.github.io/index.html)
