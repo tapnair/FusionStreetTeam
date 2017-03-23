@@ -221,7 +221,7 @@ class Fusion360CommandBase:
                 new_control = controls_to_add_to.addCommand(cmd_definition)
                 new_control.isVisible = True
 
-        except RuntimeError:
+        except:
             if ui:
                 ui.messageBox('AddIn Start Failed: {}'.format(traceback.format_exc()))
 
@@ -251,7 +251,7 @@ class Fusion360CommandBase:
                     destroy_object(drop_down_control)
                     destroy_object(drop_down_definition)
 
-        except RuntimeError:
+        except:
             if ui:
                 ui.messageBox('AddIn Stop Failed: {}'.format(traceback.format_exc()))
 
@@ -276,7 +276,7 @@ class ExecutePreviewHandler(adsk.core.CommandEventHandler):
             input_values = get_inputs(command_inputs)
             self.cmd_object_.on_preview(command_, command_inputs, args, input_values)
 
-        except RuntimeError:
+        except:
             if ui:
                 ui.messageBox('Input changed event failed: {}'.format(traceback.format_exc()))
 
@@ -303,7 +303,7 @@ class DestroyHandler(adsk.core.CommandEventHandler):
 
             self.cmd_object_.on_destroy(command_, command_inputs, reason_, input_values)
 
-        except RuntimeError:
+        except:
             if ui:
                 ui.messageBox('Input changed event failed: {}'.format(traceback.format_exc()))
 
@@ -330,7 +330,7 @@ class InputChangedHandler(adsk.core.InputChangedEventHandler):
 
             self.cmd_object_.on_input_changed(command_, command_inputs, changed_input, input_values)
 
-        except RuntimeError:
+        except:
             if ui:
                 ui.messageBox('Input changed event failed: {}'.format(traceback.format_exc()))
 
@@ -354,7 +354,7 @@ class CommandExecuteHandler(adsk.core.CommandEventHandler):
 
             self.cmd_object_.on_execute(command_, command_inputs, args, input_values)
 
-        except RuntimeError:
+        except:
             if ui:
                 ui.messageBox('command executed failed: {}'.format(traceback.format_exc()))
 
@@ -395,6 +395,6 @@ class CommandCreatedEventHandler(adsk.core.CommandCreatedEventHandler):
 
             self.cmd_object_.on_create(command_, inputs_)
 
-        except RuntimeError:
+        except:
             if ui:
                 ui.messageBox('Command created failed: {}'.format(traceback.format_exc()))
